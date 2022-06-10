@@ -1,0 +1,482 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="footer.css" type="text/css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="sliki/testlogo.png" />
+    <link rel="stylesheet" href="burgercss.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="carouselcss.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            /*height: 100% !important;*/
+            /*background-color: rgb(0, 0, 0) !important;*/
+            font-family: 'Koulen', Sans-Serif !important;
+            text-align: center;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: none;
+        }
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        .patch {
+            position: absolute;
+            width: 100%;
+            height: 150px;
+            background-color: black;
+        }
+
+        .diagonal-box {
+            height: 100%;
+            transform: skewY(8deg);
+            /* background-color: #d02424; */
+            background-image: url("sliki/bgtest.jpg");
+            /*position: relative;*/
+            top: 57%;
+            box-shadow: 0px 25px 20px 10px #838383;
+        }
+
+        .straight-box {
+            transform: skewY(-8deg);
+            margin-top: 2%;
+        }
+
+        .first-div {
+            /*height: 130%;*/
+            height: 600px;
+            position: relative;
+            top: -31%;
+            width: 100%;
+            background-color: black;
+            background-image: url("sliki/gallery/aboutusbg2.jpg");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: skewY(8deg);
+            z-index: 1;
+            box-shadow: 0px 25px 20px 10px #000000;
+        }
+
+        .first-row-height {
+            /*height: 47%;*/
+            position: relative;
+            bottom: 140px;
+        }
+
+        .inner-first-div {
+            height: 100%;
+        }
+
+        .straight-box-first-div {
+            transform: skewY(-8deg);
+            /*height: 130%;*/
+            height: 600px;
+        }
+
+        .third-div {
+            /*position: relative;*/
+            position: relative;
+            bottom: 140px;
+            z-index: -1;
+            background-color: white;
+        }
+
+        .wrapper-div-over-red-diagonal {
+            height: 1000px;
+            position: relative;
+            bottom: 140px;
+        }
+
+
+        @media screen and (max-width: 539px),
+        (max-width: 767px) and (min-width: 541px),
+        (max-width: 911px) and (min-width: 821px),
+        (min-width: 992px) and (max-width: 1280px) {
+            .wrapper-div-over-red-diagonal {
+                height: 1400px !important;
+            }
+        }
+
+        @media screen and (max-width: 540px) and (min-width: 540px) {
+            .wrapper-div-over-red-diagonal {
+                height: 1500px !important;
+            }
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1280px) {
+            .wrapper-div-over-red-diagonal {
+                height: 1000px !important;
+            }
+        }
+
+        @media screen and (max-width: 920px) and (min-width: 768px) {
+            .wrapper-div-over-red-diagonal {
+                height: 1800px !important;
+            }
+
+        }
+
+        @media screen and (max-width: 780px) and (min-width: 470px) {
+            .first-div {
+                background-size: 160%;
+            }
+
+            .burger.expand {
+                padding: 0px 0 250px;
+            }
+        }
+
+        @media screen and (max-width: 470px) and (min-width: 350px) {
+            .first-div {
+                background-size: 210%;
+            }
+
+            .burger.expand {
+                padding: 0px 0 250px;
+            }
+        }
+
+        /* Animation */
+        .animate-in {
+            -webkit-animation: fadeIn .5s ease-in;
+            animation: fadeIn .5s ease-in;
+        }
+
+        .animate-out {
+            -webkit-transition: opacity .5s;
+            transition: opacity .5s;
+            opacity: 0;
+        }
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        #footer {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+
+        <nav>
+            <ul>
+
+                <li><a href="skymoto.html#linkgallery">Gallery</a></li>
+                <li><a href="skymoto.html#linkbrands">Brands</a></li>
+                <li><a href="skymoto.html#linknews">News</a></li>
+                <li><a href="skymoto.html#linkcontact">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://skymoto.com.mk/">Eshop</a></li>
+
+            </ul>
+        </nav>
+        <div id="logo2">
+            <a href=""><img src="sliki/cropped-logo-300x94.png" alt=""></a>
+        </div>
+    </div>
+
+
+    <div class="row first-row-height">
+        <div class="first-div">
+            <div class="inner-first-div container py-5">
+                <div class="straight-box-first-div row align-items-center py-5">
+                    <div class="col-lg-6 d-none d-lg-block"><img src="sliki/cropped-logo-300x94.png" alt=""
+                            style="width: 300px;height:94px;">
+                    </div>
+                    <div class="col-lg-6" style="bottom: 7px;">
+                        <h1 class="display-4" style="color: rgb(255, 255, 255);font-size: 120px;
+                        text-shadow:6px 6px rgb(0, 0, 0);">About Us</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row wrapper-div-over-red-diagonal">
+        <div class="col-xs w-100 diagonal-box py-5">
+            <div class="straight-box container">
+                <div class="row">
+                    <div class="col align-self-start" style="top: 20px;">
+                        <p style="font-size: 30px; color: white;">We are unstoppable enthusiasts who since 2006 have
+                            been redefining
+                            motorsport in Macedonia through
+                            the availability of world brands and trends.<br><br>
+                            For every fan of this sport we have an offer of top quality products and designs and every
+                            year we
+                            surprise with an even better and richer selection.</p>
+
+                    </div>
+
+                    <div class="col align-self-center" style="top: 120px;">
+                        <p style="font-size: 30px; color: white;">We believe that adrenaline and safety must go hand in
+                            hand and that
+                            quality tires, parts and
+                            protective equipment are everything - but a luxury and we prove it through our affordable
+                            prices.<br><br>
+                            For scooters, bikers, enduro, cross, touring - we are here to equip you for your adventure:
+                            from
+                            clothes, tires and parts, to knowledge, tips and recommendations!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="third-div">
+        <div class=" py-5">
+            <div class="container py-5">
+                <div class="row mb-4">
+                    <div class="col-lg-5">
+                        <h2 class="display-4 font-weight-light">Our team</h2>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <!-- Team item-->
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                                src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100"
+                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO -
+                                Founder</span>
+
+                        </div>
+                    </div>
+                    <!-- End-->
+
+                    <!-- Team item-->
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                                src="https://bootstrapious.com/i/snippets/sn-about/avatar-3.png" alt="" width="100"
+                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO -
+                                Founder</span>
+                        </div>
+                    </div>
+                    <!-- End-->
+
+                    <!-- Team item-->
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                                src="https://bootstrapious.com/i/snippets/sn-about/avatar-2.png" alt="" width="100"
+                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO -
+                                Founder</span>
+                        </div>
+                    </div>
+                    <!-- End-->
+
+                    <!-- Team item-->
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                                src="https://bootstrapious.com/i/snippets/sn-about/avatar-1.png" alt="" width="100"
+                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO -
+                                Founder</span>
+                        </div>
+                    </div>
+                    <!-- End-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container">
+                <div class="row justify-content-around">
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title">SkyMoto<span></span></h5>
+                            <p>SkyMoto DOOEL, importer of: Continental, Pirelli,
+                                Metzeler, Motorex, LP, filters HIFLO,
+                                JT Sprocket, RK Chain, LS2, Vemar, FORMA, ARIETE,FERODO,
+                                PRO-X , KENNY, PULL-IN, NORDCODE, CHAMPION
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-10 col-sm-6 col-md-2">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Follow up<span></span></h5>
+                            <a href="https://www.facebook.com/skajmoto" target="_blank"> <i class="fa fa-facebook"> </i>
+                            </a>
+                            <a href="https://www.instagram.com/skajmoto/" target="_blank"> <i class="fa fa-instagram">
+                                </i> </a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">How to reach us<span></span></h5>
+                            <p>15 Korpus bb 1000 Skopje, Republic of North Macedonia</p>
+                            <a href="#" style="text-decoration: none!important;"><i class="fa fa-phone"></i>
+                                <a href="tel:+38970206053">+38970206053</a></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>Copyright Web Za Leb © 2022. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        window.addEventListener("beforeunload", function () {
+            document.body.classList.add("animate-out");
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        $(".line").hover(function () {
+            $(".line").addClass("hover");
+        }, function () {
+            $(".line").removeClass("hover");
+        });
+
+        $('.burger').on('click', function () {
+            if (!$('.burger').is('.expand')) {
+                $('.line').hide();
+                setTimeout(function () {
+                    $('.line').show();
+                }, 280);
+                setTimeout(function () {
+                    $('#logo').hide();
+                }, 100);
+                $('.burger').delay(100).queue(function () {
+                    $('.burger').addClass('expand').dequeue();
+                });
+                $('nav').delay(30).fadeIn('slow');
+                if ($(window).width() > 1150)
+                    $('#logo2').delay(30).fadeIn('slow');
+                $('ul').css("display", "inline-block")
+            }
+        });
+
+        $('.line').on('click', function () {
+            if ($('.burger').is('.expand')) {
+                setTimeout(function () {
+                    $('nav').fadeOut(1);
+                    $('#logo2').fadeOut(1);
+                    $('.burger').delay(1).queue(function () {
+                        $('.burger').removeClass('expand').dequeue();
+                    });
+                    if ($(window).width() > 1370) {
+                        setTimeout(function () {
+                            $('#logo').show();
+                        }, 200);
+                    }
+                }, 100)
+
+            }
+        });
+
+        $(window).resize(function () {
+
+            if ($('.burger').is('.expand') || $(window).width() < 1370) {
+                $("#logo").hide()
+            }
+            if (!$('.burger').is('.expand') && $(window).width() > 1570) {
+                $("#logo").show()
+            }
+            if ($('.burger').is('.expand')) {
+                if ($(window).width() < 1570 && $('.burger').is('.expand')) {
+                    $('#logo2').hide();
+                }
+                else if ($(window).width() > 1150 && $('.burger').is('.expand')) {
+                    $('#logo2').show();
+                }
+                if ($(window).width() < 805 && $('.burger').is('.expand')) {
+                    $('.burger').removeClass('expand')
+                    $('nav').hide();
+                    expand = 1
+                }
+            }
+            if ($(window).width() > 805 && !$('.burger').is('.expand') && expand == 1) {
+                $('.burger').addClass('expand')
+                $('nav').show();
+                expand = 0
+            }
+        });
+    </script>
+</body>
+
+</html>

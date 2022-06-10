@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyMoto</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="footer.css" type="text/css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="sliki/testlogo.png" />
+    <link rel="stylesheet" href="burgercss.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="carouselcss.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Koulen&display=swap');
+
+        .wrapper1 {
+            position: relative;
+        }
+
+        nav {
+            display: none;
+        }
+
+        body {
+            height: 100% !important;
+            background-color: rgb(0, 0, 0) !important;
+            font-family: 'Koulen', Sans-Serif !important;
+            overflow-x: hidden;
+
+        }
+
+        #autoCarousel {
+            z-index: 1;
+            box-shadow: 0px 25px 25px 10px #000000;
+        }
+
+        #bgall {
+            background-image: url("sliki/bgtest.jpg");
+            background-repeat: repeat;
+        }
+
+        h1 {
+            font-size: 48px !important;
+            font-family: 'Koulen', Sans-Serif !important;
+        }
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #logo {
+            position: absolute;
+            width: 150px;
+            left: 5%;
+            top: 2%;
+            z-index: 1;
+
+        }
+
+        #brands img {
+            /* border: 3px solid rgb(255, 255, 255); */
+            box-shadow: rgb(255, 255, 255) 0px 0px 15px !important;
+        }
+
+        #brands img:hover {
+            /* border: 3px solid rgb(255, 255, 255); */
+            box-shadow: rgb(255, 0, 0) 0px 0px 15px !important;
+        }
+
+        .my-form {
+            color: #ffffff;
+        }
+
+        .my-form .btn-default {
+            background-color: #2f2f2f;
+            color: #fff;
+            border-radius: 0;
+        }
+
+        .my-form .btn-default:hover {
+            background-color: #ce0000;
+            color: #fff;
+        }
+
+        .my-form .form-control {
+            border-radius: 0;
+        }
+
+        #galerijaSliki {
+            box-shadow: rgb(255 255 255) 0px 0px 10px !important;
+        }
+
+        #galerijaSliki:hover {
+            box-shadow: rgb(255, 0, 0) 0px 0px 15px !important;
+        }
+
+        /* Animation */
+        .animate-in {
+            -webkit-animation: fadeIn .5s ease-in;
+            animation: fadeIn .5s ease-in;
+        }
+
+        .animate-out {
+            -webkit-transition: opacity .5s;
+            transition: opacity .5s;
+            opacity: 0;
+        }
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class=" burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+
+        <nav>
+            <ul>
+
+                <li id="about"><a href="#linkgallery">Gallery</a></li>
+                <li id="contact"><a href="#linkbrands">Brands</a></li>
+                <li id="news"><a href="#linknews">News</a></li>
+                <li id="brands"><a href="#linkcontact">Contact</a></li>
+                <li id="eshop"><a href="about.html">About</a></li>
+                <li id="brands"><a href="https://skymoto.com.mk/" target="_blank">Eshop</a></li>
+
+            </ul>
+        </nav>
+        <div id="logo2">
+            <a href=""><img src="sliki/cropped-logo-300x94.png" alt=""></a>
+        </div>
+    </div>
+    <a href=""><img id="logo" src="sliki/cropped-logo-300x94.png" alt=""></a>
+
+    <div id="autoCarousel" class="carousel slide test" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#autoCarousel" data-slide-to="0"></li>
+            <li data-target="#autoCarousel" data-slide-to="1"></li>
+            <li data-target="#autoCarousel" data-slide-to="2"></li>
+            <li data-target="#autoCarousel" data-slide-to="3"></li>
+            <li data-target="#autoCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner container-fluid">
+            <div class="carousel-item active">
+                <img class="img-fluid" style="width: 100%; height: 100%; object-fit: fill" src="sliki/Nova1.png">
+
+
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" style="width: 100%; height: 100%; object-fit: fill" src="sliki/Nova2.png">
+
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="img-fluid" style="width: 100%; height: 100%; object-fit: fill" src="sliki/Nova3.png">
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="img-fluid" style="width: 100%; height: 100%; object-fit: fill" src="sliki/FIRST.png">
+
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" style="width: 100%; height: 100%; object-fit: fill" src="sliki/SECOND.png">
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="bggallery">
+       
+    </div> -->
+
+    <div id="bgall">
+        <div class="row justify-content-center pt-5">
+            <h1 class="text-light" id="linkgallery">Gallery</h1>
+        </div>
+        <div class="row justify-content-center pt-5">
+            <div id="gallery" class="row d-flex w-50">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <a href="#" class="pop" data-toggle="modal" data-target="#exampleModal"> <img id="galerijaSliki"
+                            src="sliki\gallery\20220428_130826.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Boat on Calm Water" />
+                    </a>
+
+                    <a href="#" class="pop" data-toggle="modal" data-target="#exampleModal"><img id="galerijaSliki"
+                            src="sliki\gallery\IMG_9191.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Wintry Mountain Landscape" /></a>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a href="#" class="pop" data-toggle="modal" data-target="#exampleModal"><img id="galerijaSliki"
+                            src="sliki\gallery\IMG_9186.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Mountains in the Clouds" /></a>
+
+                    <a href="#" class="pop" data-toggle="modal" data-target="#exampleModal"><img id="galerijaSliki"
+                            src="sliki\gallery\IMG_9177.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Boat on Calm Water" /></a>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a href="#" class="pop" data-toggle="modal" data-target="#exampleModal"><img id="galerijaSliki"
+                            src="sliki\gallery\2020sliki.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Waves at Sea" /></a>
+
+                    <a href="#" class="pop" data-toggle="modal" data-target="#exampleModal"><img id="galerijaSliki"
+                            src="sliki\gallery\IMG_9182.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Yosemite National Park" /></a>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true" >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content bg-transparent" style="width:100%; border: none;">
+                        <div class="modal-body" style="position: relative;">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                style="position: absolute; top: 25px; right: 30px;">
+                                <span aria-hidden="true" style="font-size:45px; color: rgb(247, 40, 40);">&times;</span>
+                            </button>
+                            <img src="" class="imagepreview" style="width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center pt-5">
+            <h1 class="text-light" id="linkbrands">Brands</h1>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 20px;">
+            <div id="brands" class="row d-flex w-50">
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <a href=""><img src="sliki/brands logos/LS2 SPAIN.png" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="LS2 SPAIN" /></a>
+
+                    <a href=""><img src="sliki/brands logos/MOTOREX.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="MOTOREX" /></a>
+
+                    <a href=""><img src="sliki/brands logos/GIVI.png" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="GIVI" /></a>
+
+                    <a href=""><img src="sliki/brands logos/METZELER.png" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="METZELER" /></a>
+
+                </div>
+
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <a href=""><img src="sliki/brands logos/ACERBIS.png" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="ACERBIS" /></a>
+
+                    <a href=""><img src="sliki/brands logos/AIROH.png" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="AIROH" /></a>
+
+                    <a href=""><img src="sliki/brands logos/ARIETE ITALY.png" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="ARIETE ITALY" /></a>
+
+                    <a href=""><img src="sliki/brands logos/VEMAR.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="VEMAR" /></a>
+
+                    <a href=""><img src="sliki/brands logos/NORDCODE.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="NORDCODE" /></a>
+
+
+                </div>
+
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <a href=""><img src="sliki/brands logos/CONTINENTAL.png" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="CONTINENTAL" /></a>
+
+                    <a href=""><img src="sliki/brands logos/FERODO ITALY.png" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="FERODO ITALY" /></a>
+                    <a href=""><img src="sliki/brands logos/FORMA BOOTS ITALY.jpg"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="FORMA BOOTS ITALY" /></a>
+
+                    <a href=""><img src="sliki/brands logos/PIRELLI.png" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="PIRELLI" /></a>
+
+                    <a href=""><img src="sliki/brands logos/PRO-X.png" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="PRO-X" /></a>
+
+                    <a href=""><img src="sliki/brands logos/PULLIN.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="PULLIN" /></a>
+                </div>
+
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <a href=""><img src="sliki/brands logos/HIFLO FILTRO.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="HIFLO FILTRO" /></a>
+
+                    <a href=""><img src="sliki/brands logos/JT SPROCKETS.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="JT SPROCKETS" /></a>
+
+                    <a href=""><img src="sliki/brands logos/KENNY.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="KENNY" /></a>
+
+
+                    <a href=""><img src="sliki/brands logos/RK CHAIN JAPAN.png"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="RK CHAIN JAPAN" /></a>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 20px;" id="linknews">
+            <div class="powr-rss-feed" id="e1a712a5_1650495555"></div>
+            <script src="https://www.powr.io/powr.js?platform=html%22%3E"></script>
+        </div>
+        <div class="container" id="bgcontact">
+            <div class="row justify-content-center pt-5">
+                <h1 class="text-light" id="linkcontact">Contact Us</h1>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="googlemap" style="width:100%; height:350px;"></div>
+                </div>
+                <br />
+                <div class="col-md-6">
+                    <form class="my-form">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="email" class="form-control" id="form-name" placeholder="Name"
+                                style="border-radius: 6px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" class="form-control" id="form-email" placeholder="Email Address"
+                                style="border-radius: 6px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Telephone</label>
+                            <input type="text" class="form-control" id="form-subject" placeholder="Subject"
+                                style="border-radius: 6px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Email your Message</label>
+                            <textarea class="form-control" id="form-message" placeholder="Message"
+                                style="border-radius: 6px;" maxlength="300"></textarea>
+                            <div id="characters-left">300 characters remaining</div>
+                        </div>
+                        <button class="btn btn-default" type="submit" style="border-radius: 6px;">Contact
+                            Us</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container">
+                <div class="row justify-content-around">
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title">SkyMoto<span></span></h5>
+                            <p>SkyMoto DOOEL, importer of: Continental, Pirelli,
+                                Metzeler, Motorex, LP, filters HIFLO,
+                                JT Sprocket, RK Chain, LS2, Vemar, FORMA, ARIETE,FERODO,
+                                PRO-X , KENNY, PULL-IN, NORDCODE, CHAMPION
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-10 col-sm-6 col-md-2">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Follow up<span></span></h5>
+                            <a href="https://www.facebook.com/skajmoto" target="_blank"> <i class="fa fa-facebook"> </i>
+                            </a>
+                            <a href="https://www.instagram.com/skajmoto/" target="_blank"> <i class="fa fa-instagram">
+                                </i> </a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">How to reach us<span></span></h5>
+                            <p>15 Korpus bb 1000 Skopje, Republic of North Macedonia</p>
+                            <a href="#" style="text-decoration: none!important;"><i class="fa fa-phone"></i>
+                                <a href="tel:+38970206053">+38970206053</a></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>Copyright Web Za Leb © 2022. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACm70WVCKlhpNx5t-mYkXnsrXxsEP0dxc&callback=myMap"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        window.addEventListener("beforeunload", function () {
+            document.body.classList.add("animate-out");
+        });
+        $(function () {
+            $('.pop').on('click', function () {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#exampleModal').modal('show');
+            });
+        });
+        var expand = 0
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        $(".line").hover(function () {
+            $(".line").addClass("hover");
+        }, function () {
+            $(".line").removeClass("hover");
+        });
+
+        $('.burger').on('click', function () {
+            if (!$('.burger').is('.expand')) {
+                $('.line').hide();
+                setTimeout(function () {
+                    $('.line').show();
+                }, 280);
+                setTimeout(function () {
+                    $('#logo').hide();
+                }, 100);
+                $('.burger').delay(100).queue(function () {
+                    $('.burger').addClass('expand').dequeue();
+                });
+                $('nav').delay(30).fadeIn('slow');
+                if ($(window).width() > 1150)
+                    $('#logo2').delay(30).fadeIn('slow');
+                $('ul').css("display", "inline-block")
+            }
+        });
+
+        $('.line').on('click', function () {
+            if ($('.burger').is('.expand')) {
+                setTimeout(function () {
+                    $('nav').fadeOut(1);
+                    $('#logo2').fadeOut(1);
+                    $('.burger').delay(1).queue(function () {
+                        $('.burger').removeClass('expand').dequeue();
+                    });
+                    if ($(window).width() > 1370) {
+                        setTimeout(function () {
+                            $('#logo').show();
+                        }, 200);
+                    }
+                }, 100)
+
+            }
+        });
+
+        $(window).resize(function () {
+
+            if ($('.burger').is('.expand') || $(window).width() < 1370) {
+                $("#logo").hide()
+            }
+            if (!$('.burger').is('.expand') && $(window).width() > 1570) {
+                $("#logo").show()
+            }
+            if ($('.burger').is('.expand')) {
+                if ($(window).width() < 1570 && $('.burger').is('.expand')) {
+                    $('#logo2').hide();
+                }
+                else if ($(window).width() > 1150 && $('.burger').is('.expand')) {
+                    $('#logo2').show();
+                }
+                if ($(window).width() < 805 && $('.burger').is('.expand')) {
+                    $('.burger').removeClass('expand')
+                    $('nav').hide();
+                    expand = 1
+                }
+            }
+            if ($(window).width() > 805 && !$('.burger').is('.expand') && expand == 1) {
+                $('.burger').addClass('expand')
+                $('nav').show();
+                expand = 0
+            }
+        });
+
+        jQuery(function ($) {
+            // Google Maps setup
+            var googlemap = new google.maps.Map(
+                document.getElementById('googlemap'),
+                {
+                    center: new google.maps.LatLng(42.0007716643905, 21.47180445569155),
+                    zoom: 13,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+            );
+            var marker = new google.maps.Marker({
+                position: { lat: 42.000819563050534, lng: 21.472082665311785 }, //42.000819563050534, 21.472082665311785
+                map: googlemap,
+            });
+        });
+        const mytextarea = document.getElementById('form-message')
+        const remainingChars = document.getElementById('characters-left')
+        const max = 300
+
+        mytextarea.addEventListener('input', () => {
+            const remaining = max - mytextarea.value.length;
+            const color = remaining < max * 0.1 ? 'red' : null;
+
+            remainingChars.textContent = `${remaining} characters remaining`
+            remainingChars.style.color = color;
+        })
+    </script>
+</body>
+
+</html>
